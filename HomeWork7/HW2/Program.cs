@@ -41,6 +41,8 @@ void PrintMatrix(int[,] inputMatrix)
 int[,] result = GetMatrix(5, 6, 0, 10);
 PrintMatrix(result);
 
+if (row >= result.GetLength(0) || column >= result.GetLength(1)) Console.WriteLine("Такого элемента нет");
+
 for (int i = 0; i < result.GetLength(0); i++)
 {
     for (int j = 0; j < result.GetLength(1); j++)
@@ -52,7 +54,6 @@ for (int i = 0; i < result.GetLength(0); i++)
     }
 }
 
-if (row >= result.GetLength(0) || column >= result.GetLength(1)) Console.WriteLine("Такого элемента нет");
 
 
 
